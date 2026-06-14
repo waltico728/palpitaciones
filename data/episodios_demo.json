@@ -1,0 +1,153 @@
+[
+  {
+    "id": "e1",
+    "paciente_id": "p4",
+    "fecha_hora": "2026-06-12 09:15",
+    "ecg_sample_key": "tv_qrs_ancho",
+    "lectura_ia": {
+      "frecuencia": 170,
+      "regularidad": "regular",
+      "qrs": "ancho",
+      "sospecha_fa": false,
+      "sospecha_tv": true,
+      "extrasistoles_frecuentes": false
+    },
+    "diario": {
+      "hora_inicio": "09:10",
+      "duracion_min": 8,
+      "forma_inicio": "Súbita",
+      "forma_fin": "Aún presente al registrar",
+      "desencadenantes": "Esfuerzo físico (subiendo escaleras)",
+      "sintomas": ["presincope", "mareo"],
+      "tolerancia": "mal_tolerado",
+      "recurrencia_post_ablacion": false
+    },
+    "triage": {
+      "nivel": "ROJO",
+      "mensaje": "⚠️ Tu registro muestra signos que requieren atención médica urgente. Por favor, dirigite a un servicio de emergencias o guardia ahora mismo y lleva este registro con vos. El equipo médico fue notificado de inmediato.",
+      "justificacion": [
+        "Síntoma de alarma referido: presincope.",
+        "Trazado con QRS ancho y sospecha de taquicardia ventricular.",
+        "Antecedente de cardiopatía estructural en paciente con hallazgo relevante en el trazado."
+      ]
+    },
+    "revision_medica": {
+      "estado": "pendiente",
+      "nivel_medico": null,
+      "indicacion": "",
+      "fecha": null
+    }
+  },
+  {
+    "id": "e2",
+    "paciente_id": "p1",
+    "fecha_hora": "2026-06-12 18:42",
+    "ecg_sample_key": "fa_irregular",
+    "lectura_ia": {
+      "frecuencia": 110,
+      "regularidad": "irregular",
+      "qrs": "estrecho",
+      "sospecha_fa": true,
+      "sospecha_tv": false,
+      "extrasistoles_frecuentes": false
+    },
+    "diario": {
+      "hora_inicio": "18:30",
+      "duracion_min": 45,
+      "forma_inicio": "Súbita",
+      "forma_fin": "Gradual",
+      "desencadenantes": "Después de una comida abundante",
+      "sintomas": ["palpitaciones_leves"],
+      "tolerancia": "bien_tolerado",
+      "recurrencia_post_ablacion": true
+    },
+    "triage": {
+      "nivel": "AMARILLO",
+      "mensaje": "🟡 Recibimos tu registro. No parece una urgencia, pero el equipo médico va a revisarlo de forma prioritaria en las próximas 24 a 48 horas. Si en ese tiempo aparece dolor en el pecho, falta de aire en reposo, mareo intenso o un desmayo, consultá de inmediato a un servicio de emergencias.",
+      "justificacion": [
+        "Trazado irregular sugestivo de fibrilación auricular nueva.",
+        "Episodio compatible con recurrencia post-ablación."
+      ]
+    },
+    "revision_medica": {
+      "estado": "pendiente",
+      "nivel_medico": null,
+      "indicacion": "",
+      "fecha": null
+    }
+  },
+  {
+    "id": "e3",
+    "paciente_id": "p2",
+    "fecha_hora": "2026-06-11 12:05",
+    "ecg_sample_key": "tpsv_regular",
+    "lectura_ia": {
+      "frecuencia": 180,
+      "regularidad": "regular",
+      "qrs": "estrecho",
+      "sospecha_fa": false,
+      "sospecha_tv": false,
+      "extrasistoles_frecuentes": false
+    },
+    "diario": {
+      "hora_inicio": "12:00",
+      "duracion_min": 12,
+      "forma_inicio": "Súbita",
+      "forma_fin": "Súbita (cedió con maniobra de Valsalva)",
+      "desencadenantes": "Cambio brusco de posición",
+      "sintomas": ["palpitaciones_leves", "mareo"],
+      "tolerancia": "bien_tolerado",
+      "recurrencia_post_ablacion": false
+    },
+    "triage": {
+      "nivel": "AMARILLO",
+      "mensaje": "🟡 Recibimos tu registro. No parece una urgencia, pero el equipo médico va a revisarlo de forma prioritaria en las próximas 24 a 48 horas. Si en ese tiempo aparece dolor en el pecho, falta de aire en reposo, mareo intenso o un desmayo, consultá de inmediato a un servicio de emergencias.",
+      "justificacion": [
+        "Taquicardia regular (180 lpm) bien tolerada."
+      ]
+    },
+    "revision_medica": {
+      "estado": "confirmado",
+      "nivel_medico": "AMARILLO",
+      "indicacion": "Cuadro compatible con episodio recurrente de TPSV, bien tolerado. Mantener registro con wearable ante nuevos episodios y maniobras vagales como primera medida. Se agenda teleconsulta para evaluar estudio electrofisiológico.",
+      "fecha": "2026-06-11 20:30"
+    }
+  },
+  {
+    "id": "e4",
+    "paciente_id": "p3",
+    "fecha_hora": "2026-06-13 08:20",
+    "ecg_sample_key": "sinusal_normal",
+    "lectura_ia": {
+      "frecuencia": 72,
+      "regularidad": "regular",
+      "qrs": "estrecho",
+      "sospecha_fa": false,
+      "sospecha_tv": false,
+      "extrasistoles_frecuentes": false
+    },
+    "diario": {
+      "hora_inicio": "08:15",
+      "duracion_min": 1,
+      "forma_inicio": "Súbita",
+      "forma_fin": "Súbita",
+      "desencadenantes": "Café en ayunas",
+      "sintomas": ["palpitaciones_leves"],
+      "tolerancia": "bien_tolerado",
+      "recurrencia_post_ablacion": false
+    },
+    "triage": {
+      "nivel": "VERDE",
+      "mensaje": "🟢 ¡Buenas noticias! Tu registro no muestra hallazgos que indiquen una urgencia. Quedó guardado en tu historial para que el equipo médico lo revise en tu próximo control de rutina. Si los síntomas cambian o empeoran, registrá un nuevo episodio o contactanos.",
+      "justificacion": [
+        "Ritmo sin hallazgos de alarma y episodio bien tolerado."
+      ]
+    },
+    "revision_medica": {
+      "estado": "pendiente",
+      "nivel_medico": null,
+      "indicacion": "",
+      "fecha": null
+    }
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "p1",
+    "nombre": "María Gómez",
+    "edad": 58,
+    "sexo": "Femenino",
+    "motivo": "Seguimiento post-ablación de FA (PFA)",
+    "wearable": "Apple Watch",
+    "antecedentes": {
+      "cardiopatia_estructural": false,
+      "otros": "Fibrilación auricular paroxística, ablación por PFA hace 4 meses, hipertensión arterial"
+    },
+    "medicacion": ["Flecainida 100 mg/12h", "Bisoprolol 2.5 mg/día"],
+    "caracteristicas_habituales": "Episodios de palpitaciones rápidas e irregulares, de inicio y fin abruptos, de minutos a 1-2 horas de duración."
+  },
+  {
+    "id": "p2",
+    "nombre": "Jorge Pérez",
+    "edad": 45,
+    "sexo": "Masculino",
+    "motivo": "TPSV documentada",
+    "wearable": "KardiaMobile",
+    "antecedentes": {
+      "cardiopatia_estructural": false,
+      "otros": "Episodios recurrentes de taquicardia paroxística supraventricular desde los 30 años"
+    },
+    "medicacion": ["Ninguna medicación antiarrítmica regular"],
+    "caracteristicas_habituales": "Palpitaciones de inicio y fin súbitos, frecuencia muy elevada, ceden con maniobras vagales."
+  },
+  {
+    "id": "p3",
+    "nombre": "Ana Torres",
+    "edad": 32,
+    "sexo": "Femenino",
+    "motivo": "Palpitaciones en estudio",
+    "wearable": "Apple Watch",
+    "antecedentes": {
+      "cardiopatia_estructural": false,
+      "otros": "Sin antecedentes cardiológicos. Refiere ansiedad."
+    },
+    "medicacion": ["Ninguna"],
+    "caracteristicas_habituales": "Episodios breves de pocos segundos, sensación de 'salto' en el pecho, sin otros síntomas."
+  },
+  {
+    "id": "p4",
+    "nombre": "Carlos Ruiz",
+    "edad": 67,
+    "sexo": "Masculino",
+    "motivo": "Extrasístoles ventriculares frecuentes, control farmacológico",
+    "wearable": "KardiaMobile",
+    "antecedentes": {
+      "cardiopatia_estructural": true,
+      "otros": "Infarto agudo de miocardio hace 6 años, FEVI levemente reducida (45%)"
+    },
+    "medicacion": ["Amiodarona 200 mg/día", "Enalapril 10 mg/12h", "Atorvastatina 40 mg/día"],
+    "caracteristicas_habituales": "Palpitaciones aisladas tipo 'vuelco', y episodios ocasionales de mareo."
+  }
+]

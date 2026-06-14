@@ -1,0 +1,74 @@
+{
+  "sinusal_normal": {
+    "etiqueta": "Ritmo sinusal normal (~72 lpm)",
+    "descripcion": "Ritmo regular, QRS angosto, sin hallazgos relevantes.",
+    "lectura_ia": {
+      "frecuencia": 72,
+      "regularidad": "regular",
+      "qrs": "estrecho",
+      "sospecha_fa": false,
+      "sospecha_tv": false,
+      "extrasistoles_frecuentes": false
+    }
+  },
+  "fa_irregular": {
+    "etiqueta": "Trazado irregular, sugestivo de FA (~110 lpm)",
+    "descripcion": "Ritmo irregular, QRS angosto, sin ondas P identificables: sugestivo de fibrilación auricular.",
+    "lectura_ia": {
+      "frecuencia": 110,
+      "regularidad": "irregular",
+      "qrs": "estrecho",
+      "sospecha_fa": true,
+      "sospecha_tv": false,
+      "extrasistoles_frecuentes": false
+    }
+  },
+  "tpsv_regular": {
+    "etiqueta": "Taquicardia regular de QRS angosto (~180 lpm)",
+    "descripcion": "Ritmo regular, rápido, QRS angosto: sugestivo de taquicardia paroxística supraventricular.",
+    "lectura_ia": {
+      "frecuencia": 180,
+      "regularidad": "regular",
+      "qrs": "estrecho",
+      "sospecha_fa": false,
+      "sospecha_tv": false,
+      "extrasistoles_frecuentes": false
+    }
+  },
+  "tv_qrs_ancho": {
+    "etiqueta": "Taquicardia regular de QRS ancho (~170 lpm)",
+    "descripcion": "Ritmo regular, rápido, QRS ancho: patrón compatible con taquicardia ventricular.",
+    "lectura_ia": {
+      "frecuencia": 170,
+      "regularidad": "regular",
+      "qrs": "ancho",
+      "sospecha_fa": false,
+      "sospecha_tv": true,
+      "extrasistoles_frecuentes": false
+    }
+  },
+  "extrasistoles_ves": {
+    "etiqueta": "Ritmo de base regular con extrasístoles ventriculares frecuentes (~78 lpm)",
+    "descripcion": "Ritmo de base sinusal con extrasístoles ventriculares frecuentes (latidos prematuros de QRS ancho).",
+    "lectura_ia": {
+      "frecuencia": 78,
+      "regularidad": "regular",
+      "qrs": "estrecho",
+      "sospecha_fa": false,
+      "sospecha_tv": false,
+      "extrasistoles_frecuentes": true
+    }
+  },
+  "bradicardia": {
+    "etiqueta": "Bradicardia (~42 lpm)",
+    "descripcion": "Ritmo regular, lento, QRS angosto: bradicardia sinusal.",
+    "lectura_ia": {
+      "frecuencia": 42,
+      "regularidad": "regular",
+      "qrs": "estrecho",
+      "sospecha_fa": false,
+      "sospecha_tv": false,
+      "extrasistoles_frecuentes": false
+    }
+  }
+}
