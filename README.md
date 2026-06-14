@@ -21,11 +21,14 @@ streamlit run app.py
   tablero con la cola priorizada (rojos primero), el detalle del episodio y
   la acción de confirmar/reclasificar + escribir indicación.
 
-Todo el estado vive en `st.session_state` durante la sesión (incluyendo los
-pacientes que se registren); los archivos en `data/` son solo la semilla
-inicial de pacientes y episodios de ejemplo. **Al reiniciarse el servidor se
-pierden los datos creados durante la sesión** — para uso real esto debería
-migrar a una base de datos persistente.
+Los pacientes y episodios que se registran se guardan en `data/runtime/`
+(JSON en disco), por lo que son visibles para todas las sesiones mientras la
+app sigue corriendo (ej. el médico ve los episodios que registra un
+paciente desde otro dispositivo). Los archivos en `data/` (sin `runtime/`)
+son solo la semilla inicial de pacientes y episodios de ejemplo. **Si la app
+se reinicia** (redeploy o "se duerme" por inactividad en Streamlit Cloud),
+`data/runtime/` se reinicia a esa semilla y se pierden los datos creados —
+para uso real esto debería migrar a una base de datos persistente.
 
 ## Acceso del equipo médico
 

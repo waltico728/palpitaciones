@@ -5,7 +5,7 @@ import streamlit as st
 
 from utils.auth import requerir_medico
 from utils.ecg_synth import generar
-from utils.storage import ORDEN_TRIAGE, get_episodio, get_episodios, get_paciente, init_state
+from utils.storage import ORDEN_TRIAGE, get_episodio, get_episodios, get_paciente, guardar_episodio, init_state
 
 st.set_page_config(page_title="Tablero médico — Palpitaciones", page_icon="🩺", layout="wide")
 init_state()
@@ -127,5 +127,6 @@ with st.form(key=f"form_{ep['id']}"):
             "indicacion": indicacion,
             "fecha": datetime.now().strftime("%Y-%m-%d %H:%M"),
         }
+        guardar_episodio(ep)
         st.success("Revisión guardada.")
         st.rerun()
