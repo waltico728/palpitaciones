@@ -14,12 +14,17 @@ from __future__ import annotations
 
 import json
 import shutil
+import tempfile
 from pathlib import Path
 
 import streamlit as st
 
 DATA_DIR = Path(__file__).resolve().parent.parent / "data"
-RUNTIME_DIR = DATA_DIR / "runtime"
+
+# El repo se monta de solo lectura en Streamlit Community Cloud, así que los
+# datos que se van generando (pacientes/episodios nuevos) se guardan en un
+# directorio temporal en lugar de dentro del repo.
+RUNTIME_DIR = Path(tempfile.gettempdir()) / "palpitaciones_runtime"
 
 
 def _ruta_runtime(nombre: str) -> Path:
